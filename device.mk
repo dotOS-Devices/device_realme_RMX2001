@@ -25,8 +25,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # Call proprietary blob setup
 $(call inherit-product-if-exists, vendor/realme/RMX2001/RMX2001-vendor.mk)
 
-# IMS
-$(call inherit-product, vendor/mediatek/ims/mtk-ims.mk)
+# Parts
+$(call inherit-product-if-exists, packages/apps/RealmeParts/parts.mk)
 
 PRODUCT_SHIPPING_API_LEVEL := 29
 
