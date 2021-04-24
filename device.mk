@@ -73,7 +73,8 @@ PRODUCT_COPY_FILES += \
 # Init
 PRODUCT_PACKAGES += \
     init.mt6785.rc \
-    fstab.mt6785
+    fstab.mt6785 \
+    perf_profile.sh
 
 # Keylayouts
 PRODUCT_COPY_FILES += \
