@@ -21,6 +21,7 @@ on post-fs-data
 
     # Services
     stop console
+
 on boot
     # DT2W
     write /proc/touchpanel/double_tap_enable 1
@@ -44,6 +45,13 @@ on boot
     # Smart Charging
     chown system system /sys/class/power_supply/battery/mmi_charging_enable
     chmod 0666 /sys/class/power_supply/battery/mmi_charging_enable
+
+service charger /system/bin/charger
+    class charger
+    user system
+    group system graphics input
+    capabilities SYS_BOOT
+    seclabel u:r:charger:s0
 
 on property:sys.boot_completed=1
     

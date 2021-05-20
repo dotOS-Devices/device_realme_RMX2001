@@ -1,6 +1,3 @@
-# Kernel Power Off Charging (KPOC)
-/system/bin/kpoc_charger u:object_r:kpoc_charger_exec:s0
-
 # HALs
 /system/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-service\.RMX2001 u:object_r:hal_fingerprint_RMX2001_exec:s0
 
