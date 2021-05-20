@@ -1,0 +1,10 @@
+[
+  {
+    "repository": "kernel_realme_RMX2001",
+    "target_path": "kernel/realme/RMX2001"
+  },
+  {
+    "repository": "vendor_realme_RMX2001",
+    "target_path": "vendor/realme/RMX2001"
+  }
+]
